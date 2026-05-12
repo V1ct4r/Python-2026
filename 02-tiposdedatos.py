@@ -40,11 +40,18 @@ print (f"El área del triángulo es de {round(área)} cm")
 print (float(edad))
 
 
-# Cadenas de Texto
+# Cadenas de Texto (Strings)
 carrera = "Ingeniería Civil en Informática"
 institución = "Universidad de los Lagos"
+print ("------CADENAS DE TEXTO (STRING)-------")
+
 
 print (carrera[0])
+
+# Aplicando Método Split
+
+print (carrera.split())           # se divide la cadena en subcadenas
+print (institución.split())       # Se para la cadena en subcadenas 
 
 
 
@@ -71,6 +78,27 @@ numeros = [1,2,3,4,5]                            # Arreglo númerico
 print(colores[0])   # Imprime el primer elemento de la lista de colores (azul)  
 print(numeros[-1])  # Imprime el último elemento de la lista  de números (5)
 
+
+# Booleanos (Lógicos)
+
+luz_electrica = True 
+interruptor = False 
+
+print  ("---- Booleanos-----")
+
+print (luz_electrica)
+print ( interruptor)
+
+# Método Type que permite saber el tipo de dato de una variable
+print (f" El tipo de dato es {type (num_complejo)}")
+
+
+print ("----EVALUANDO DATOS BOOLEANOS-----")
+
+print (bool(1))
+print (bool(0))
+print (bool(True))
+print (bool(4000))
 
 
 
