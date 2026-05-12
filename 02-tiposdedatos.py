@@ -48,5 +48,29 @@ print (carrera[0])
 
 
 
+# Imprimir la posición del  caracter 
+print (carrera[o]) # se imprime la primera letra
+print (carrera[o]) # se imprime la última letra
+
+print ("Hola" * 4.5)  # multiplicación de un string por un entero       
+
+print(carrera[1])      # Imprime la posición del caracter en la cadena de texto (n), ya que la posición inicia en 0
+print(carrera[-1])     # Imprime el último caracter de la cadena de texto (a), utilizando un índice negativo
+
+print("hola" * 4)  # Multiplicaicon de una cadena de texto, repitiendo la palabra "hola" 4 veces
+
+print(carrera[0:10])   # Imprime un rango de caracteres desde la posición 0 hasta la posición 9 (Ingenieria)
+
+# Metodo len() permite conocer la cantidad de caracteres que tiene una cadena de texto (ademas de coontar los espacios)
+
+# ARREGLOS (LISTAS)
+print("---------- ARREGLOS (LISTAS) ----------")
+colores = ["azul", "rojo", "verde", "amarillo"]  # Arreglo de stings
+numeros = [1,2,3,4,5]                            # Arreglo númerico
+
+print(colores[0])   # Imprime el primer elemento de la lista de colores (azul)  
+print(numeros[-1])  # Imprime el último elemento de la lista  de números (5)
+
+
 
 
