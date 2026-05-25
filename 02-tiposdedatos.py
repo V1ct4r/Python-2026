@@ -6,7 +6,7 @@
 edad = 18
 
 # Números Flotantes (Reales)
-estatura = 1.75 # el deciaml se utiliza punto y no coma
+estatura = 1.75 # el decimal se utiliza punto y no coma
 
 # Números complejos 
 num_complejo = 4 + 2j           # primera forma de crear un número complejo
@@ -100,5 +100,7 @@ print (bool(0))
 print (bool(True))
 print (bool(4000))
 
-
-
+# EVALUANDO NÚMEROS CON OPERADORES DE COMPARACIÓN 
+print (100 > 50)
+print (10 == 10)
+print (20 < 0)
