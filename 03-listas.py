@@ -58,5 +58,6 @@ ramos.extend(ramos_segundo_semestre)
 print(ramos)
 
 
-
+# Aplicando metodo index 
+print(ramos_segundo_semestre.index('Algebra'))
 
