@@ -59,5 +59,5 @@ print(ramos)
 
 
 # Aplicando metodo index 
-print(ramos_segundo_semestre.index('Algebra'))
+print(ramos_segundo_semestre.index('Algebra')) # posicion 1
 
