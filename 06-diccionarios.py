@@ -1,0 +1,102 @@
+#Diccionarios
+
+paciente = {
+    "nombre": "Benjamin Bahamonde",
+    "edad": 18,
+    "ciudad": "Ancud",
+    "fechas_atencion": [5, 8, 12],
+    "diagnostico": "resfrio comun",  
+    "informacion_extra": {           
+        "tipo_de_sangre": "A+",
+        "hemograma": False
+    }                                
+}
+
+# Segunda forma de declarar un diccionario 
+medico = dict(
+    nombre = 'Ignacio Saez',
+    edad = 19,
+    especialidad = 'cardiologo'     
+)
+
+print(type(paciente))
+print(f"====== ficha paciente ===== \n{paciente}") 
+
+# CONSULTA DE INFORMACION A  DICCIONARIIS
+
+# ¿como consulto solo el nombre del pacienyte sin traer el diccionario completo"
+print(f'nombre del paciente a consultar: {paciente['nombre']}')
+
+#A diferencia de [], este metodo no genera error si no existe la clave
+#metodo get() obtiene el valor de una clave, si no existe retorna None
+print(paciente.get('nombre'))
+print(paciente.get('rut', 'N/D'))
+
+# Retornar las claves, los valores o ambas como pares
+print(paciente.keys()) #dict_keys(["nombre", "edad",....... ]) solo claves
+print(paciente.values()) #dict_values(["Benjamin", "18", ......])
+print(paciente.items()) #dict_items([("nombre", "Benjamin"),.....])
+
+print(len(medico))
+print(len(paciente))
+
+#Modificacion del diccionario
+#agregar una clave nueva al diccionario paciente
+
+paciente['telefono'] = '+56936361020'
+print("====== ficha con telefono ===== /n")
+print(paciente) 
+
+#Sobrescribir valor de una clave existente
+paciente['edad'] =20
+
+print ("\n==== FICHA PACIENTE CON EDAD ACTUALIZADA ====\n")
+print(paciente)
+
+# Fusiona otro diccionario (o pares clave-volar) en el actual
+# Util para actualizar varios campos a la vez con el metodo update (actualizar varias claves)
+paciente.update({'edad': 21, 'ciudad': 'Castro' })
+print(paciente['edad'])
+print(paciente['ciudad'])
+print(paciente)
+
+# Eliminar una clave sin retorno
+del(paciente)['informacion_extra']
+print(paciente)
+
+# Eliminar una clave y retornar su valor (a difenrecia de del, que no lo retorna) -> pop()
+edad_eliminada= paciente.pop("edad")
+print(f'Edad eliminada:{edad_eliminada}')
+print(paciente)
+
+# OTRAS UTILIDADES DEL DICCIONARIO
+
+# Con in se verifica si una clave existe en el diccionario (sin usar condicionales todavia)
+print('nombre' in (paciente))
+print ('rut' in (paciente))
+
+# Con copy() se crea una copia independiente del diccionario
+paciente2 = paciente.copy
+paciente2['nombre'] = 'Javiera'
+print(paciente['nombre'])
+print(paciente2['nombre'])
+print(paciente2)
+
+# Con clear() elimina todos los elementos del diccionario, dejandolo vacio(a difererencia del)
+medico2 = medico.copy()
+print ("\n==== DICCIONARIO COPIA (MEDICO2) ====\n")
+print(medico2)
+medico2.crear()
+print(medico2) # -> {}
+
+n = [1, 2, 3, 4, 5]
+n_str = list(map(str,n))
+print(f"Lista de numeros como strings: {', '. join(n_str)}")
+
+ramos = ["Programacion", "Fisica", "Calculo", "Habilidades Comunicativas"]
+long = list (filter(lambda x:len(x) > 7, ramos))
+print(long)
+
+a =[1, 2, 3, 4]
+b =["A", "B", "C", "D"]
+    

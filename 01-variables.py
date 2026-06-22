@@ -23,7 +23,7 @@ print ("Mi nombre es", + nombre + "y mi apellido es", + apellido +  "y tengo", +
 
 # Utilizando el método Input
 carrera = input ("¿Qué carrera estudias?")
-print (f"Yo estudio la carrera de: {carrera}")
+print (f"Yo estudio la carrera de: {carrera}") 
 
 
 
